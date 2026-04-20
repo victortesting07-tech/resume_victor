@@ -256,9 +256,7 @@
   }
 
   /* Expand first card by default */
-  document.addEventListener('DOMContentLoaded', () => {
-    const firstToggle = document.querySelector('.exp-toggle');
-    if (firstToggle) toggleExp(firstToggle);
+  document.querySelectorAll('.exp-toggle').forEach(btn => toggleExp(btn));
   });
 
   /* ── Profile Picture Upload ── */
