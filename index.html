@@ -255,9 +255,8 @@
     btn.childNodes[1].textContent = isOpen ? ' Show details' : ' Hide details';
   }
 
-  /* Expand first card by default */
+  /* Expand ALL cards by default */
   document.querySelectorAll('.exp-toggle').forEach(btn => toggleExp(btn));
-  });
 
   /* ── Profile Picture Upload ── */
   document.getElementById('pic-input').addEventListener('change', function () {
